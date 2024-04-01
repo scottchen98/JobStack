@@ -8,6 +8,7 @@ export default {
     return {
       name: "job-applications-app",
       region: "us-west-2",
+      stage: "scott-chen",
     };
   },
   stacks(app) {
