@@ -1,0 +1,21 @@
+{
+  "name": "@job-applications-app/core",
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "test": "sst bind vitest",
+    "typecheck": "tsc -noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.30",
+    "drizzle-kit": "^0.20.14",
+    "sst": "^2.41.3",
+    "vitest": "^1.4.0"
+  },
+  "dependencies": {
+    "@neondatabase/serverless": "^0.9.0",
+    "drizzle-orm": "^0.30.4",
+    "hono": "^4.1.3",
+    "zod": "^3.22.4"
+  }
+}
