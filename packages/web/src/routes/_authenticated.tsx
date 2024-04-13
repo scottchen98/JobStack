@@ -6,12 +6,12 @@ import { useKindeAuth } from "@kinde-oss/kinde-auth-react";
 export function Login() {
   const { login, register } = useKindeAuth();
   return (
-    <div className="flex flex-col items-center">
-      <h1 className="text-4xl font-bold">
-        Welcome to Job Applications Tracker
+    <div className="flex flex-col items-center justify-center h-dvh">
+      <h1 className="text-5xl font-bold mb-2 tracking-wide">
+        Welcome to JobStack
       </h1>
-      <p className="text-xl">Please login to continue</p>
-      <div className="mt-8 flex flex-col gap-y-4">
+      <p className="text-xl">Your organized path to landing your dream job.</p>
+      <div className="mt-8 flex gap-x-4">
         <Button onClick={() => login()}>Login</Button>
         <Button onClick={() => register()}>Register</Button>
       </div>

@@ -21,7 +21,7 @@ function RootLayout() {
     <>
       <div className="py-2 flex max-w-2xl mx-auto justify-between items-center ">
         <Link to="/" className="text-2xl">
-          Job Application Tracker
+          JobStack
         </Link>
         <div className="flex gap-x-4">
           {" "}
@@ -48,7 +48,7 @@ function RootLayout() {
         </div>
       </div>
       <hr />
-      <div className="bg-background text-foreground flex flex-col m-10 gap-y-10 max-w-2xl mx-auto">
+      <div className="bg-background text-foreground flex flex-col gap-y-10 max-w-2xl mx-auto">
         <Outlet />
       </div>
     </>
