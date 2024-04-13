@@ -19,7 +19,7 @@ function RootLayout() {
   const { isAuthenticated } = useKindeAuth();
   return (
     <>
-      <div className="py-2 flex max-w-2xl mx-auto justify-between items-center ">
+      <div className="py-3 flex max-w-2xl mx-auto bg-background justify-between items-center fixed left-0 right-0 border-x-0 border-t-0 border-b">
         <Link to="/" className="text-2xl">
           JobStack
         </Link>
@@ -47,7 +47,6 @@ function RootLayout() {
           )}
         </div>
       </div>
-      <hr />
       <div className="bg-background text-foreground flex flex-col gap-y-10 max-w-2xl mx-auto">
         <Outlet />
       </div>
