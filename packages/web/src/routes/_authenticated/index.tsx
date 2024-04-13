@@ -39,13 +39,13 @@ function HomePage() {
 
   return (
     <>
-      <Card className="w-fit mx-auto">
+      <Card className="w-fit h-fit mx-auto border-primary mt-10">
         <CardHeader>
-          <CardTitle className="text-sm">Total Job Applications:</CardTitle>
+          <CardTitle className="text-xl">Total Job Applications:</CardTitle>
         </CardHeader>
         <CardContent>
           {error ? "An error has occurred: " + error.message : null}
-          <div className="text-2xl font-bold">
+          <div className="text-2xl font-bold text-center">
             {isPending ? "..." : totalJobApplications}
           </div>
         </CardContent>
