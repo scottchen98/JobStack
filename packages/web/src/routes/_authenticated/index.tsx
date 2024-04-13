@@ -39,7 +39,7 @@ function HomePage() {
 
   return (
     <>
-      <Card className="w-fit h-fit mx-auto border-primary mt-10">
+      <Card className="w-fit h-fit mx-auto border-primary mt-28">
         <CardHeader>
           <CardTitle className="text-xl">Total Job Applications:</CardTitle>
         </CardHeader>

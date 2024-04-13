@@ -55,17 +55,17 @@ function AllApplications() {
   console.log(data);
 
   return (
-    <>
-      <h1 className="text-2xl">All Job Applications</h1>
+    <div className="mt-28">
       {error ? (
         "An error has occurred: " + error.message
       ) : (
         <Table>
           <TableCaption>A list of your recent job applications.</TableCaption>
-          <TableHeader>
+          <TableHeader className="bg-secondary">
             <TableRow>
               <TableHead className="w-[100px]">Title</TableHead>
               <TableHead>Company</TableHead>
+
               <TableHead className="text-right">Job Posting</TableHead>
             </TableRow>
           </TableHeader>
@@ -73,9 +73,6 @@ function AllApplications() {
             {isPending ? (
               <TableRow>
                 <TableCell className="font-medium">
-                  <Skeleton className="h-4 w-full"></Skeleton>
-                </TableCell>
-                <TableCell>
                   <Skeleton className="h-4 w-full"></Skeleton>
                 </TableCell>
                 <TableCell>
@@ -92,9 +89,9 @@ function AllApplications() {
                     {application.jobTitle}
                   </TableCell>
                   <TableCell>{application.company}</TableCell>
-                  <TableCell className="text-right">
+                  <TableCell className="flex justify-end">
                     {application.imageUrl && (
-                      <img className="max-w-12" src={application.imageUrl} />
+                      <img className="max-w-60" src={application.imageUrl} />
                     )}
                   </TableCell>
                 </TableRow>
@@ -103,6 +100,6 @@ function AllApplications() {
           </TableBody>
         </Table>
       )}
-    </>
+    </div>
   );
 }

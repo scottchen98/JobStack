@@ -130,8 +130,7 @@ function NewApplicationPage() {
   });
 
   return (
-    <>
-      <h1 className="text-2xl">New Application</h1>
+    <div className="mt-28">
       {mutation.isError && (
         <Alert>
           <AlertCircle className="h-4 w-4" />
@@ -229,6 +228,6 @@ function NewApplicationPage() {
           ></form.Subscribe>
         </form>
       </form.Provider>
-    </>
+    </div>
   );
 }
