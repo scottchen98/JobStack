@@ -11,7 +11,7 @@ import { Skeleton } from "@/components/ui/skeleton";
 
 import { useQuery } from "@tanstack/react-query";
 
-import { createFileRoute } from "@tanstack/react-router";
+import { Link, createFileRoute } from "@tanstack/react-router";
 import { useKindeAuth } from "@kinde-oss/kinde-auth-react";
 
 export const Route = createFileRoute("/_authenticated/all-applications")({
@@ -91,7 +91,13 @@ function AllApplications() {
                   <TableCell>{application.company}</TableCell>
                   <TableCell className="flex justify-end">
                     {application.imageUrl && (
-                      <img className="max-w-60" src={application.imageUrl} />
+                      <Link
+                        to={application.imageUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <img className="max-w-60" src={application.imageUrl} />
+                      </Link>
                     )}
                   </TableCell>
                 </TableRow>
