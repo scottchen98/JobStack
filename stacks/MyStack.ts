@@ -33,6 +33,12 @@ export function API({ stack }: StackContext) {
       "GET /applications/total-applications":
         "packages/functions/src/applications.handler",
       "GET /applications": "packages/functions/src/applications.handler",
+      // "GET /cs": {
+      //   function: {
+      //     handler: "packages/csharp/CSharpFunction",
+      //     runtime: "container",
+      //   },
+      // },
       "POST /applications": "packages/functions/src/applications.handler",
       "POST /signed-url": {
         function: {
